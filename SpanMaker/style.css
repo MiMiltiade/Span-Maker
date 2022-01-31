@@ -1,0 +1,219 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #CFD6EA;
+    color: #fff;
+    height: 100vh;
+}
+/* Le header */
+
+header{
+    background: #3E424C;
+    color: #fff;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Eczar', serif;
+    text-align: center;
+    font-size: 42px;
+    margin: 10px;
+}
+
+/* Affichage de l'aide et animation */
+
+.aide{
+    display: inline-block;
+    cursor: pointer;
+    animation-name: attirerAttention;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes attirerAttention {
+    0% {
+        transform: rotate(0deg);
+    }
+    49% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    51% {
+        transform: rotate(15deg);
+    }
+    52% {
+        transform: rotate(-15deg);
+    }
+    53% {
+        transform: rotate(15deg);
+    }
+    54% {
+        transform: rotate(-15deg);
+    }
+    55% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+      
+}
+
+.aide:hover {
+    font-size: 40px;
+}
+.aide:active {
+    font-size: 36px;
+}
+
+
+.aide-info{
+    width: 70%;
+    font-size: 18px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+    text-align: justify;
+    display: none;
+    margin: 16px;
+}
+.active {
+    display: block;
+}
+.aide-info p a{
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Le formulaire et ses inputs  */
+
+.form-global{
+    font-size: 20px;
+    padding: 25px;
+    margin: 70px auto;
+    width: 60%;
+    height: auto; 
+    background: #3E424C;
+    /* color: #1EFFBC; */
+    font-family: 'Heebo', sans-serif;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px #333;
+
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Heebo', sans-serif;
+    margin: 10px;
+}
+.label-scan-maker {
+    margin: 10px;
+    font-size: 24px;
+}
+.input-scan-maker{
+    margin: 10px;
+    width: 90%;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 20px;
+
+}
+
+.div-span{
+    margin: 3px;
+    width: 100%;
+    text-align: center;
+}
+.div-span input {
+    margin-right: 15px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+.btn-resultats {
+    margin: 12px;
+    font-size: 20px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 5px black;
+    position: relative;
+    background: #5c616d;
+    color: #fff;
+
+}
+.btn-resultats:hover{
+
+    box-shadow: 0px 3px #333;
+    top: 2px;
+}
+.btn-resultats:active{
+    box-shadow: 0px 0px #333;
+    top: 5px;
+}
+
+
+/* La partie où s'affiche les résultats */
+
+
+.container-resultats {
+    margin: 5px auto;
+    padding: 15px;
+    height: auto;
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px #D5C5C8;
+    background: #3E424C;
+
+
+}
+
+.resultats h2 {
+    text-align: center;
+}
+.resultat-final{
+    margin: 10px;
+    text-align: center;
+}
+
+.copy-button {
+    display: block;
+    margin: 12px auto;
+    font-size: 16px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 5px black;
+    position: relative;
+    background: #6e7380;
+    color: #fff;
+
+}
+.copy-button:hover{
+
+    box-shadow: 0px 3px #333;
+    top: 2px;
+}
+.copy-button:active{
+    box-shadow: 0px 0px #333;
+    top: 5px;
+}

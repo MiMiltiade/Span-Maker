@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Span-Maker</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500&family=Eczar:wght@400;600&family=Heebo:wght@400;500&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1><span class='lettre'>S</span><span class='lettre'>p</span><span class='lettre'>a</span><span class='lettre'>n</span><span class='lettre'>-</span><span class='lettre'>M</span><span class='lettre'>a</span><span class='lettre'>k</span><span class='lettre'>e</span><span class='lettre'>r</span><span class='lettre'> </span><span class='lettre'>(</span><span class="aide lettre">❔</span><span class='lettre'>)</span></h1>
+            <div class="aide-info"><p>Vous utilisez <a href="https://greensock.com/" target="_blank">GreenSock</a> et vous en avez marre de devoir créer des dizaines de span pour animer vos  textes ? Le Span-Maker est la solution. Entrez votre phrase pour y ajouter un span entre chaque lettre. Choisissez des attribus si vous le souhaitez,  n'oubliez pas de mettre sa valeur avec ="" <br> Bonne   programation</p></div>
+        </div>
+    </header>
+
+    <div class="form-global">
+        <form>
+            <label for="span-maker" class="label-scan-maker">Entrez la phrase à transformer :</label>
+            <input type="text" id="span-maker" class="input-scan-maker" placeholder="Votre phrase ici">
+          
+            <div class="first-attribute-span div-span">
+                <label for="attribute-span-1" class="label-attribute-span ">Entrez un attribu :</label>
+                <input type="text" id="attribute-span-1" class="input-attribute-span">
+                
+                <label for="value-attribute-span-1" class="label-value-attribute-span">Entrez sa valeur :</label>
+                <input type="text" id="value-attribute-span-1" class="input-value-attribute-span">
+            </div>
+            <div class="second-attribute-span div-span">
+                <label for="attribute-span-2" class="label-attribute-span">Entrez un attribu :</label>
+                <input type="text" id="attribute-span-2" class="input-attribute-span">
+                
+                <label for="value-attribute-span-2" class="label-value-attribute-span">Entrez sa valeur :</label>
+                <input type="text" id="value-attribute-span-2" class="input-value-attribute-span">
+            </div>
+            <div class="third-attribute-span div-span">
+                <label for="attribute-span-3" class="label-attribute-span">Entrez un attribu :</label>
+                <input type="text" id="attribute-span-3" class="input-attribute-span">
+                
+                <label for="value-attribute-span-3" class="label-value-attribute-span">Entrez sa valeur :</label>
+                <input type="text" id="value-attribute-span-3" class="input-value-attribute-span">
+            </div>
+
+            <button class="btn-resultats">Ajouter des spans</button>
+        </form>
+
+    </div>
+    
+    <div class="container-resultats">
+        <div class="resultats">
+            <h2>Votre résultat ici :</h2>
+        </div>
+        <button class="copy-button">Copier le résultat</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
