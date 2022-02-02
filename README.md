@@ -1,5 +1,5 @@
 # Span-Maker
-It's a little program that take a standard text and add a <span> for each letters of your text
+It's a program that takes a standard text and adds a <span> for each letter of your text.
 
-I use it when i want to work with library like GreenSock.js. because is annoying to set span for each letters of text manualy 
-  I used it for animate the Title of this program 
+I use it when I want to work with libraries like GreenSock.js because it is annoying to set a span for each letter of a text manually 
+  I used this to animate the title of this program.
